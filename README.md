@@ -179,19 +179,37 @@ This enables data-driven credit approval monitoring and risk optimization.
 
 ---
 
-# 📈 Model Performance
+# 📊 Model Evaluation Visualizations
 
-| Metric | Value |
-|--------|-------|
-| Accuracy | 0.84 |
-| ROC AUC | 0.78 |
+## 🔹 ROC Curve
 
-### Interpretation:
+The ROC Curve demonstrates the model’s ability to distinguish between approved and rejected customers.
 
-- Strong precision for approved customers
-- Limited false approvals
-- Good class separation (ROC AUC = 0.78)
-- Stable behavioral segmentation
+- ROC AUC = 0.78
+- Strong class separation above random baseline
+
+![ROC Curve](images/roc_curve.png)
+
+---
+
+## 🔹 Confusion Matrix
+
+Shows prediction breakdown:
+
+- True Approvals
+- True Rejections
+- False Approvals
+- False Rejections
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+---
+
+## 🔹 Target Distribution
+
+Displays class balance of approval outcomes in dataset.
+
+![Target Distribution](images/target_distribution.png)
 
 ---
 
